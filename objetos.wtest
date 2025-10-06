@@ -1,0 +1,24 @@
+import wollok.game.*
+import objetos.*
+
+describe "test objetos"{
+
+    method initialize(){
+
+        game.clear()
+    }
+
+    test"Lionel en un lugar distinto de la pelota se mueve hacia ella"{
+        lionel.objeto(pelota)
+    
+        lionel.position(game.at(2,2))
+        lionel.buscarla()
+
+        assert.equals(pelota.position(), lionel.position())
+
+    }
+
+
+
+
+}
