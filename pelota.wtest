@@ -1,0 +1,10 @@
+import objetos.*
+import wollok.game.*
+
+describe "pelota" {
+  test "Despues de ir al inicio, la pelota queda en (0,0)" {
+    pelota.irAlInicio()
+
+    assert.equals(game.at(0,0), pelota.position())
+  }
+}
