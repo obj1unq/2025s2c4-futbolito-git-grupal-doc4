@@ -18,7 +18,7 @@ object lionel {
 	}
 
 	method buscarla(){
-		position = objeto.position() //comentario
+		position = objeto.position()
 	}
 	
 }
